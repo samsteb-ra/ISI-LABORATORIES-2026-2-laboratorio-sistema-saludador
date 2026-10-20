@@ -1,0 +1,44 @@
+# Prompts utilizados
+
+Herramienta de IA: Cursor.
+
+## Prompt 1
+
+Necesito rehacer el Sistema Saludador en Java y JavaFX. Debe pedir nombre,
+edad y AM/PM. ¿Me ayudas a crear la estructura básica del proyecto con
+Maven Wrapper?
+
+## Prompt 2
+
+Ya instalé el JDK y Git y reinicié Cursor. Verifica que java, javac y git
+estén disponibles en la terminal, que JAVA_HOME esté configurado y que el
+proyecto lab-5 esté correctamente configurado.
+
+## Prompt 3
+
+Completa todo lo necesario para que la aplicación funcione:
+
+- Interfaz en JavaFX con campos de nombre y edad, y selección AM/PM.
+- Botón "Solicitar saludo".
+- Mostrar un saludo personalizado usando el nombre y la edad.
+- Que el saludo cambie según AM o PM.
+- Validar que los campos no estén vacíos y que la edad sea un número entero
+  válido entre 0 y 120.
+- Mantener únicamente Java y JavaFX, sin frameworks adicionales.
+- Mantener la estructura actual del proyecto.
+- Asegúrate de que el proyecto pueda ejecutarse con el Maven Wrapper.
+
+Cuando termines, compila el proyecto y ejecútalo para comprobar que
+funciona.
+
+## Prompt 4
+
+Revisa la validación de la edad: ¿qué pasa si escribo un número muy largo,
+letras o un valor negativo? Corrige cualquier error que encuentres y
+confirma que la aplicación no se cierra ni muestra excepciones.
+
+## Prompt 5
+
+Actualiza el README con los requisitos, el comando para ejecutar la
+aplicación y la estructura del proyecto. Agrega también un .gitignore
+adecuado para un proyecto Maven.
