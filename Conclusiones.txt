@@ -1,0 +1,44 @@
+# Retos
+
+El mayor reto fue rehacer un proyecto a partir de los archivos de otra persona:
+primero tuve que entender cómo se conectan las piezas (el FXML, el controlador,
+la clase App y el pom.xml) antes de poder tocar algo sin romperlo. También fue
+un reto decidir qué conservar tal cual y qué valía la pena mejorar.
+
+# Descubrimientos
+
+Aprendí cómo JavaFX separa la interfaz (saludador.fxml) de la lógica
+(SaludadorController) mediante fx:id y @FXML, y cómo styles.css cambia el
+aspecto con clases como mensaje-ok y mensaje-error sin tocar el código de la
+interfaz. También aprendí que el Maven Wrapper permite ejecutar el proyecto sin
+instalar Maven: basta con el JDK y el comando mvnw clean javafx:run.
+
+# Sorpresas
+
+Me sorprendió que faltara un archivo tan pequeño como
+.mvn/wrapper/maven-wrapper.properties y que sin él mvnw no pueda funcionar,
+porque ahí se indica de dónde descargar Maven. También me sorprendió que un
+detalle de validación pasara desapercibido: si la edad era un número muy largo,
+la comprobación de "solo dígitos" lo aceptaba y Integer.parseInt fallaba.
+
+# Comandos y herramientas
+
+Java (JDK 17 o superior), JavaFX 21, Maven Wrapper (mvnw / mvnw.cmd),
+javafx-maven-plugin, Git y GitHub, y Cursor como asistente de IA.
+Comando principal: .\mvnw.cmd clean javafx:run
+
+# Dificultades
+
+El mvnw venía con extensión .txt y hubo que renombrarlo a mvnw para que
+funcionara como script. Además, los archivos de configuración del proyecto
+quedaban dentro de src/main en el esquema original, cuando Maven los espera en la
+raíz junto al pom.xml. Por último, la validación de la edad necesitó un ajuste
+para evitar errores con valores fuera de rango muy grandes.
+
+# Conclusión
+
+Rehacer el saludador me ayudó a ver el ciclo completo de una aplicación de
+escritorio: estructura del proyecto, interfaz, lógica, validaciones, estilos,
+ejecución con Maven Wrapper y control de versiones. Entendí que revisar y
+probar el trabajo de otros, aun cuando parece funcionar, ayuda a encontrar
+errores que a primera vista no se notan.
