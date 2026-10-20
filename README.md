@@ -1,5 +1,3 @@
-# ISI-LABORATORIES-2026-2-laboratorio-sistema-saludador
-
 # Sistema Saludador
 
 Aplicación de escritorio en Java y JavaFX. Pide nombre, edad y momento del día (AM/PM) y genera un saludo personalizado.
